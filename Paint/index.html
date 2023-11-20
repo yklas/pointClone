@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>IKhlas | Paint</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="drawing_board">
+      <canvas></canvas>
+      </section>
+
+      <section class="tools_board">
+        <div class="row">
+          <label class="title">ТӘСІЛДЕР</label>
+          <ul class="options">
+            <li class="option tool" id="restangle">
+              <img
+                class="restangle_img"
+                src="icons/restangle.svg"
+                alt="restangle"
+              />
+              <span>Төртбүршек</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img class="circle_img" src="icons/circlee.png" alt="circle" />
+              <span>Домалақ</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img class="traingle_img" src="icons/traingle.png" alt="triangle" />
+              <span>Үшбүршек</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill_color" />
+              <label for="fill_color">Түсті толтыру</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">ВАРИАНТТАР</label>
+          <ul class="options">
+            <li class="option tool active" id="brush">
+                <img class="brush" src="icons/brush.png" alt="brush" />
+            <span>Сызу</span>
+            </li>
+            <li class="option tool" id="eraser">
+                <img class="eraser" src="icons/eraser.svg" alt="eraser" />
+            <span>Өшіргіш</span>
+            </li>
+            <li class="option">
+              <input type="range" id="size_slider" min="1" max="30" value="5" />
+            </li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <label class="title">түстер</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option">
+                <input type="color" id="color_picker" value="#4a98f7" />
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button class="clear_canvas">Өшіру</button>
+          <button class="save_img">Жүктеу</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
